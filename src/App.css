@@ -1,0 +1,36 @@
+
+/*Pseudo element ::after to display the flag of the user's country */
+.flag::after{
+    content:url('./images/flagGB.png');
+    display: block;
+}
+
+.App {
+    text-align: center;
+    background: #643a7a;
+    height: 100vh;
+}
+
+/*Responsive Css for the widget */
+.PersonDiv{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 2px;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to top, #40334f, #2f273c, #272232, #372448);
+    color: rgb(253, 255, 234);
+    font-family: 'overlock', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+.PersonDiv h2{
+    color: #b072e9;
+    margin-bottom: -10px;
+}
